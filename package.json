@@ -27,7 +27,7 @@
     "render-build": "rm -rf client/node_modules client/package-lock.json && npm install --include=dev && cd client && npm install @rollup/rollup-linux-x64-gnu --no-save && cd .. && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
+  "dependencies": {
     "concurrently": "^9.1.2"
   }
 }
