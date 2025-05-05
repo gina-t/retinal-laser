@@ -66,14 +66,23 @@ npm install gsap @gsap/react
 
 5. After installation, you can start the development server:
 
-```zsh
 # Start backend development server
-npm run dev:server
+
+```zsh
+cd server
+npm run dev
+```
 
 # Start frontend development server
-npm run dev:client
+```zsh
+cd client
+npm run dev
+```
+
 
 # Or run both concurrently
+
+```zsh
 npm run dev
 ```
 
@@ -83,15 +92,6 @@ npm run dev
 PORT=
 NODE_ENV=
 LOG_LEVEL=
-```
-7. In `server` directory generate two secret tokens for JWT and paste into JWT_SECRET fields, one for each environment:
-
-```zsh
-# For development token
-node -e "console.log('DEV_TOKEN: ' + require('crypto').randomBytes(64).toString('hex'))"
-
-# For production token
-node -e "console.log('PROD_TOKEN: ' + require('crypto').randomBytes(64).toString('hex'))"
 ```
 
 8. In `server` directory:
@@ -112,15 +112,15 @@ Screenshots of app demonstrating functionality:
 
 ### screenshot-1
 
-![home page](./client/src/assets/screenshot-1.png)
+![](./client/src/assets/screenshot-1.png)
 
 ### screenshot-2
 
-![register page](./client/src/assets/screenshot-2.png)
+![](./client/src/assets/screenshot-2.png)
 
 ### screenshot-3
 
-![food search page](./client/src/assets/screenshot-3.png)
+![](./client/src/assets/screenshot-3.png)
 
 
 ## License
@@ -133,7 +133,7 @@ Screenshots of app demonstrating functionality:
 To contribute, please follow these steps:
 
 1. **Fork the Repository**:
-   - Navigate to `https://github.com/gina-t/interstitial`
+   - Navigate to ``
    - Click "Fork" to create a copy of the repository in your GitHub account.
 
 2. **Clone the Forked Repository**:
