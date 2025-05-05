@@ -13,22 +13,18 @@
   "license": "MIT",
   "author": "",
   "type": "module",
-  "main": "server/dist/server.js",
-  "types": "./server/dist/server.d.ts",
   "private": true,
   "workspaces": [
     "client",
     "server"
   ],
   "scripts": {
-    "postinstall": "npm run setup:client && npm run setup:server",
-    "setup:client": "cd client && npm install",
-    "setup:server": "cd server && npm install",
-    "build": "npm run build:client && npm run build:server",
-    "build:client": "cd client && npm run build",
-    "build:server": "cd server && npm run build",
-    "start": "cd server && npm start",
-    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\"",
+    "start": "node server/dist/server.js",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "concurrently \"cd server && npm run build\" \"cd client && npm run build\"",
+    "render-build": "npm install --include=dev && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
