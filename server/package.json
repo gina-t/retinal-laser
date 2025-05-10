@@ -7,21 +7,21 @@
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --skipLibCheck",
     "start": "node dist/server.js",
     "dev": "tsc --watch & node --watch dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.1",
-    "@types/helmet": "^0.0.48",
-    "typescript": "^5.8.3"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/helmet": "^0.0.48",
+    "typescript": "^5.8.3"
   }
 }
