@@ -7,7 +7,7 @@
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
-    "build": "tsc --skipLibCheck || true",
+    "build": "tsc",
     "start": "node dist/server.js",
     "dev": "tsc --watch & node --watch dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
