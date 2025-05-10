@@ -24,7 +24,7 @@
     "dev:server": "cd server && npm run dev",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "build": "concurrently \"cd server && npm run build\" \"cd client && npm run build\"",
-    "render-build": "rm -rf client/node_modules client/package-lock.json && npm install --include=dev && cd client && npm install @rollup/rollup-linux-x64-gnu --no-save && cd .. && npm run build",
+    "render-build": "rm -rf client/node_modules client/package-lock.json && npm install --include=dev && cd client && npm install && npm install @rollup/rollup-linux-x64-gnu --no-save && cd .. && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
