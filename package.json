@@ -11,20 +11,16 @@
     "url": "git+https://github.com/gina-t/retinal-laser.git"
   },
   "license": "MIT",
-  "author": "",
+  "author": "Dr Gina Tsanaktsidis",
   "type": "module",
   "private": true,
-  "workspaces": [
-    "client",
-    "server"
-  ],
   "scripts": {
     "start": "node server/dist/server.js",
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run dev",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "build": "concurrently \"cd server && npm run build\" \"cd client && npm run build\"",
-    "render-build": "npm install --include=dev && cd client && npm install && npm install @rollup/rollup-linux-x64-gnu lightningcss-linux-x64-gnu --no-save && cd .. && npm run build",
+    "render-build": "npm install && cd client && npm install && npm install @rollup/rollup-linux-x64-gnu lightningcss-linux-x64-gnu --no-save && cd ../server && npm install --include=dev && cd .. && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
