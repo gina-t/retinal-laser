@@ -23,12 +23,16 @@ function RetinaComponent() {
   );
 
   return (
-    <div ref={retinaRef} className="retina-container">
+    <div
+      ref={retinaRef}
+      className="retina-container w-full max-w-[700px]"
+    >
       <svg
-        className="retina-diagram"
+        className="retina-diagram w-full h-auto"
         width="700"
         height="700"
         viewBox="0 0 700 700"
+        preserveAspectRatio="xMidYMid meet"
         fill="none"
       >
         {/* Main retina structure from Figma */}
@@ -402,7 +406,6 @@ function RetinaComponent() {
             opacity="0"
             fill="#FFFDEC"
           />
-
 
           {/* spot-36 (corresponds to spot-16) */}
           <circle
