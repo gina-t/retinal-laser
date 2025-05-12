@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'Cupidus';
+  font-style: normal;
+  src: url('../src/assets/Cupidus-Extralight.ttf') format('truetype');
+}
+
+@theme {
+  --font-sans: 'Cupidus', sans-serif;
+  --color-mode: light dark;
+}
+
+/* Base styles */
+body h1 h2 h3 h4 h5 h6 {
+  font-family: var(--font-sans);
+}
