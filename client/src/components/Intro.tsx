@@ -57,13 +57,13 @@ export function Intro() {
         The vitreous gel occupies the central cavity of the eye and is a homogeneous structure composed of water and collagen, interspersed with a minimum of cells. From a refractive perspective, the vitreous gel should be optically empty so that light reaching the retina from the pupil is not refracted. The vitreous gel is strongly adherent posteriorly to the circular margin of the optic disc, to the macula, to the equator, to equatorial arterioles and veins, and more anteriorly to the ora serrata.
       </p>
       <p className="mt-4 text-base/6 text-gray-900">
-        Due to aging, the vitreous gel undergoes a process of liquefaction and syneresis, and eventually starts separating from the posterior retina, toward the anterior retina. This process is known as a posterior vitreous detachment, and once it starts, progresses rapidly over a 24 hour period. The vitreous gel remains attached at the ora serrata but the posterior now loose component floats in the vitreous cavity, producing symptoms of floaters. Floaters are commonly described as circles and lines, and may appear to be insects in your visual field. Floaters appear more prominent against brightly illuminated, uniform backgrounds, for eg. against a white wall, a bright blue or overcast sky, and against your computer screen. In about 10% of cases, the detachment of the vitreous gel from the retina causes a retinal tear. A retinal tear, if undetected, may result in a retinal detachment, because the liquid from the vitreous cavity enters through the retinal tear, and induces the retina to detach from the underlying retinal pigment epithelium.
+        Due to aging, the vitreous gel undergoes a process of liquefaction and syneresis, and eventually starts separating from the posterior retina, toward the anterior retina. This process is known as a posterior vitreous detachment, and once it starts, progresses rapidly over a 24 hour period. The vitreous gel remains attached at the ora serrata but the posterior loose component floats in the vitreous cavity, producing symptoms of floaters. Floaters are commonly described as circles and lines, and may appear to be insects in your visual field. Floaters appear more prominent against brightly illuminated, uniform backgrounds, for eg. against a white wall, a bright blue or overcast sky, and against your computer screen. In about 10% of cases, the detachment of the vitreous gel from the retina causes a retinal tear. A retinal tear, if undetected, may result in a retinal detachment, because the liquid from the vitreous cavity enters through the retinal tear, and induces the retina to detach from the underlying retinal pigment epithelium.
       </p>
       <p className="mt-4 text-base/6 text-gray-900">
         If detected early, retinal tears can be treated with laser therapy, or cryotherapy if the tear is not amenable to laser due to its position or due to a poor view from vitreous haemorrage. Laser therapy to a retinal tear is depicted in the adjacent animation.
       </p>
       <p className="mt-4 text-base/6 text-gray-900">
-        Laser therapy to a retinal tear applies very discrete coherent light from a laser crystal to the edges of the retinal tear, typically as contiguous spots, in 2 or 3 rows. The laser spots initially appear white, and with histological changes become dark grey, brown, or black. The laser spots eventually form a histological adhesion around the edges of the retinal tear, such that liquid from the vitreous cavity can not enter the subretinal space.
+        Laser therapy to a retinal tear applies very discrete coherent light from a laser crystal to the edges of the retinal tear, typically as contiguous spots, in 3 concentric rows. The laser spots initially appear white, and with histological changes become dark grey, brown, or black. The laser spots eventually form a histological adhesion around the edges of the retinal tear, such that liquid from the vitreous cavity can not enter the subretinal space.
       </p>
       <p className="mt-4 text-base/6 text-gray-900">
         Laser therapy only treats the retinal tear, and not the floaters. The floaters are due to the floating liquefied vitreous gel, and haemorrage or red blood cells and clots in the vitreous gel. The red blood cells are removed by your own immune system, for eg. macrophage cells remove debris from the vitreous gel. The floaters that are secondary to the loose, floating gel are not removed by macrophages. These fibrose over time but remain, and a process of neural adapation occurs after 3 to 6 weeks, so that floaters initially perceived quite dramatically, are no longer as prominent and annoying. I like to describe floaters appearing as windscreen wipers as you drive your car. Although you are aware of the windcsreen wipers, you as the driver still see perfectly in the distance.
@@ -96,10 +96,10 @@ export function Intro() {
 
 export function IntroFooter() {
   return (
-    <p className="flex items-center gap-x-2 text-[0.8125rem]/6 text-gray-500">
+    <p className="flex items-center gap-x-2 text-[0.9125rem]/6 text-gray-900">
       Brought to you by{' '}
         <Logo className="inline-block w-auto" />   
-        <span className="text-[0.8125rem]/6 text-gray-400 hover:text-gray-300 transition">
+        <span className="text-[0.9125rem]/6 text-gray-900 hover:text-white transition">
           Dr Gina Tsanaktsidis  
         </span>
           
