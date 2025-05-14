@@ -35,7 +35,10 @@ function RetinaComponent() {
       if (entry.isIntersecting) {
         restartAnimation();
       }
-    }, { threshold: 0.6 }); // Trigger when 60% visible
+    }, { 
+      threshold: 1.0,
+      rootMargin: '-10px 0px'
+    }); 
     
     if (currentRef) {
       observer.observe(currentRef);
@@ -81,10 +84,10 @@ function RetinaComponent() {
           fill="none"
         >
           {/* Main retina structure from Figma */}
-          <circle cx="350" cy="350" r="349.5" fill="#FFE6C9" stroke="black" />
-          <circle cx="349.5" cy="350.5" r="312.5" fill="#FFA09B" stroke="black" />
-          <circle cx="350" cy="350" r="225" fill="#FFA09B" stroke="black" />
-          <circle cx="351.5" cy="351.5" r="17.5" fill="#FBF3B9" stroke="black" />
+          <circle cx="350" cy="350" r="349.5" fill="#FF6767" fillOpacity={0.8} stroke="gray" strokeOpacity={0.5} />
+          <circle cx="349.5" cy="350.5" r="312.5" fill="#FFA09B" stroke="gray" />
+          <circle cx="350" cy="350" r="225" fill="#FFA09B" stroke="gray" />
+          <circle cx="351.5" cy="351.5" r="17.5" fill="#FBF3B9" stroke="gray" />
 
           {/* Retinal vessels from Figma */}
           <g id="retinal-vessels" stroke="#FF6767" strokeWidth="2" fill="none">
@@ -92,6 +95,9 @@ function RetinaComponent() {
             <path d="M356 358C393.655 263.543 429.222 244.196 517 266.272" />
             <path d="M490 258C500 221 534 210 534 210" />
             <path d="M470 450C484.249 478.64 508.513 483.852 515 483" />
+            <path d="M268.5 295.5C330.0621 298.22929 344.1832 313.1512 351.5 350" />
+            <path d="M268.5 407.5C330.0621 404.7707 344.1832 389.8488 351.5 355" />
+
           </g>
 
           {/* Retinal tear from Figma */}
