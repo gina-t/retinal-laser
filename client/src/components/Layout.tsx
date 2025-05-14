@@ -2,6 +2,7 @@ import { useId } from 'react';
 import { Intro, IntroFooter } from './Intro';
 import { FloaterField } from './FloaterField';
 
+
 function Glow() {
   const id = useId();
 
@@ -72,6 +73,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-transparent relative">
       <FixedSidebar main={<Intro />} footer={<IntroFooter />} />
+    
       <div className="relative flex-auto">
         <main className="space-y-20 py-20 sm:space-y-32 sm:py-32 lg:ml-[31rem] px-6">
           {children}
