@@ -1,6 +1,6 @@
 import { IconLink } from './IconLink';
 import { Logo } from './Logo';
-import { Button } from './Button';
+import { SignUp } from './SignUp';
 import portrait from '../assets/portrait.jpg';
 
 function GitHubIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -71,7 +71,7 @@ export function Intro() {
         Laser therapy is performed in the outpatient setting. After dilating the pupil maximally, topical anaesthetic is applied. You are seated at the slit lamp laser, and focus your gaze on an external target. A 3-mirror contact lens is applied to the cornea, and the retinal tear brought into the opthalmologist's focused view. Contiguous laser spots are applied to the edges of the tear, usually in 2 or 3 neat rows. There is ususually no pain.After the procedure your ophthalmologist will advise you not to drive or to return to work that day and not to lift more than 20kg for about 2 weeks post retinal tear. 
       </p>
      
-      <Button />
+      <SignUp />
 
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
         <IconLink 
