@@ -15,24 +15,24 @@
 
 ## Description
 
-A responsive, full stack MERN app featuring vite, react, gsap and typescript that animates laser therapy to a retinal tear.
+A responsive, full stack MERN app that educates users about posterior vitreous detachment, a common age-related eye condition where the vitreous gel separates from the retina. The app simulates the visual experience of floaters and demonstrates how laser therapy is used to treat associated retinal tears, preventing potential retinal detachment and visual loss.
+
+Developed with medical accuracy by an ophthalmologist, this educational tool helps patients understand their condition and the treatment process through interactive visualizations.
 
 ## Technologies Used
 
-- Frontend: Vite, React, TypeScript, Gsap, Tailwind CSS
-- Backend: Node.js, Express, MongoDB
+- Frontend: Vite, React, TypeScript, GSAP, Tailwind CSS
+- Backend: Node.js, Express.js
 - Deployment: Render
-
 
 ## Features
 
-- Responsive design that works on mobile, tablet, and desktop
-- Interactive project gallery with detailed descriptions
-
-### GSAP Animation Features
-
+- Interactive retinal tear visualization with anatomically correct structures
+- Realistic floater field simulation 
+- Animated laser therapy simulation
+- Responsive design optimized for both desktop and mobile viewing
+- Contact form for professional inquiries
 - Smooth scroll-triggered animations that enhance user engagement
-- Element transitions using GSAP's timeline functionality
 
 ## Installation
 
@@ -44,36 +44,42 @@ To get started with this project, implement the following steps:
 git clone git@github.com:gina-t/retinal-laser.git
 ```
 
-2. Install `client` dependancies:
+2. Install `root` dependencies:
 
 ```zsh
-cd client
-npm install 
+npm install
 ```
 
-3. Install `server` dependencies:
+3. Install `server` dependancies:
 
 ```zsh
 cd server
 npm install
 ```
 
-4. Specifically, this project uses GSAP for animation. Register and login to GSAP and watch the tutorial for useGSAP()Hook. Import the useGSAP() hook from @gsap/react. useGSAP() is a drop-in replacement for useEffect() or useLayoutEffect() that automatically handles cleanup using gsap.context().
+4. Install `client` dependancies:
+
+```zsh
+cd client
+npm install 
+```
+
+5. This project uses GSAP for animation. Register and login to GSAP and watch the tutorial for useGSAP()Hook. Import the useGSAP() hook from @gsap/react. useGSAP() is a drop-in replacement for useEffect() or useLayoutEffect() that automatically handles cleanup using gsap.context().
 
 ```zsh
 npm install gsap @gsap/react
 ```
 
-5. After installation, you can start the development server:
+6. After installation, you can start the development server:
 
-# Start backend development server
+# Start server development 
 
 ```zsh
 cd server
 npm run dev
 ```
 
-# Start frontend development server
+# Start client development 
 ```zsh
 cd client
 npm run dev
@@ -86,7 +92,7 @@ npm run dev
 npm run dev
 ```
 
-6. Create separate .env.development and .env.production files in `server` directory:
+7. Create separate .env.development and .env.production files in `server` directory:
 
 ```plaintext
 PORT=
@@ -101,26 +107,25 @@ npm run build
 npm run start
 ```
 
-
 ## Usage
 
 Link to deployed app url:
 
-[retinal-laser]()
+[retinal-laser](https://retinal-laser.onrender.com)
 
 Screenshots of app demonstrating functionality:
 
-### screenshot-1
+### floater-field
 
-![](./client/src/assets/screenshot-1.png)
+![floater-field](./client/src/assets/floater-field.png)
 
-### screenshot-2
+### retinal-laser-sim
 
-![](./client/src/assets/screenshot-2.png)
+![retinal-laser-sim](./client/src/assets/retinal-laser-sim.png)
 
-### screenshot-3
+### scroll-triggered-animation
 
-![](./client/src/assets/screenshot-3.png)
+![scroll-triggered-animation](./client/src/assets/scroll-triggered-animation.png)
 
 
 ## License
@@ -133,13 +138,12 @@ Screenshots of app demonstrating functionality:
 To contribute, please follow these steps:
 
 1. **Fork the Repository**:
-   - Navigate to ``
+   - Navigate to `https://github.com/gina-t/retinal-laser`
    - Click "Fork" to create a copy of the repository in your GitHub account.
 
 2. **Clone the Forked Repository**:
    ```zsh
-   git clone https://github.com/YOUR-USERNAME/interstitial.git
-   cd interstitial
+   git clone git@github.com:your-user-name/retinal-laser.git
    ```
 
 3. **Create a Feature Branch**:
